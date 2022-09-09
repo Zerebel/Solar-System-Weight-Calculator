@@ -1,0 +1,26 @@
+{
+  "name": "solar-system-weight-calculator",
+  "version": "1.0.0",
+  "description": "An application which calculates the weight of an object on a certain planet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerebel/Solar-System-Weight-Calculator.git"
+  },
+  "keywords": [
+    "solar",
+    "system",
+    "planet",
+    "weight",
+    "calculator"
+  ],
+  "author": "Zerebel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zerebel/Solar-System-Weight-Calculator/issues"
+  },
+  "homepage": "https://github.com/Zerebel/Solar-System-Weight-Calculator#readme"
+}
