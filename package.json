@@ -2,7 +2,6 @@
   "name": "solar-system-weight-calculator",
   "version": "1.0.0",
   "description": "An application which calculates the weight of an object on a certain planet",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Zerebel/Solar-System-Weight-Calculator/issues"
   },
-  "homepage": "https://github.com/Zerebel/Solar-System-Weight-Calculator#readme"
+  "homepage": "https://github.com/Zerebel/Solar-System-Weight-Calculator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
