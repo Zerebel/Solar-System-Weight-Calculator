@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./dist/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        myGif: "url(/assets/img/stars.gif)",
+      },
+    },
   },
   plugins: [],
 };

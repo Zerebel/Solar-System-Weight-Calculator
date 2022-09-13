@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Weight Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style/output.css" />
+  </head>
+  <body
+    class="bg-myGif bg-repeat md:bg-no-repeat lg:bg-no-repeat bg-cover h-screen w-full"
+  >
+    <header class="m-10">
+      <h1 class="lg:text-4xl text-center text-white md:text-2xl sm:text-sm">
+        Calculate a weight of an object on a planet
+      </h1>
+    </header>
+    <main
+      class="mt-10 flex flex-wrap text-lg justify-center align-middle gap-2"
+    >
+      <div>
+        <input
+          type="text"
+          placeholder="Mass in Kilogram"
+          id="Mass"
+          class="border w-full focus:outline-none"
+        />
+      </div>
+      <div class="flex flex-col">
+        <select
+          name="planet"
+          id="planet-name"
+          class="border w-full h-full focus:outline-none"
+        >
+          <option class="disabled:bg-slate-300" disabled selected>
+            -select planet-
+          </option>
+          <option>Mecury</option>
+          <option>Venus</option>
+          <option>Earth</option>
+          <option>Mars</option>
+          <option>Jupiter</option>
+          <option>Saturn</option>
+          <option>Uranus</option>
+          <option>Neptune</option>
+          <option>Pluto</option>
+        </select>
+      </div>
+      <div>
+        <button
+          id="calculate"
+          class="bg-slate-400 text-white text-sm h-full px-2 hover:bg-blue-400 hover:text-lg"
+        >
+          Calculate weight
+        </button>
+      </div>
+    </main>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-1 mt-2 bg-slate-700 w-9/12 m-auto h-auto p-3"
+      id="info-container"
+    >
+      <div id="planet-img" class="p-3 h-full">
+        <img
+          src="/assets/img/mecury.webp"
+          alt="Planet Images"
+          id="img"
+          class="h-auto w-full object-cover"
+        />
+      </div>
+      <div
+        id="weight-info"
+        class="flex flex-col justify-center items-center gap-2"
+      >
+        <div class="bg-slate-300">
+          <span id="planet-Sentence" class="bg-slate-300"
+            >The weight of the object on</span
+          >
+        </div>
+        <div
+          class="bg-white w-20 h-20 flex rounded-full items-center justify-center"
+        >
+          <span id="weight"></span>
+        </div>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
